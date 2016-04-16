@@ -17,6 +17,6 @@ defmodule Dealer do
     hand_2 = [hand_2, Enum.at(deck, 0)]
     deck = List.delete_at(deck, 0)
 
-    { deck, hand_1, hand_2 }
+    %{ deck: deck, hand_1: hand_1, hand_2: hand_2 }
   end
 end

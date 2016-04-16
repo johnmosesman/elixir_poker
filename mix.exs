@@ -5,6 +5,7 @@ defmodule Poker.Mixfile do
     [app: :poker,
      version: "0.0.1",
      elixir: "~> 1.2",
+     escript: [main_module: Main],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]

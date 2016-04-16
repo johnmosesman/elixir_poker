@@ -3,22 +3,22 @@ defmodule DealerTest do
   doctest Dealer
 
   test "deal" do
-    result = Dealer.deal()
+    result = Dealer.deal
 
     # Deck has 48 cards remaining
     assert result
-    |> elem(0)
+    |> Map.fetch!(:deck)
     |> length
     == 48
 
     # Each hand has 2 cards
     assert result
-    |> elem(1)
+    |> Map.fetch!(:hand_1)
     |> length
     == 2
 
     assert result
-    |> elem(2)
+    |> Map.fetch!(:hand_2)
     |> length
     == 2
   end
