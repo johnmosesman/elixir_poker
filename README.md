@@ -1,6 +1,6 @@
 # Poker
 
-**TODO: Add description**
+A poker training themed project I'm using to learn elixir.
 
 ## Installation
 
