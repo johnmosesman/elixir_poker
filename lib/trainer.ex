@@ -6,4 +6,8 @@ defmodule Trainer do
       true -> false
     end
   end
+
+  def number_of_outs([[ rank_1 | suit_1 ], [ rank_2 | suit_2 ]]) do
+    # TODO
+  end
 end

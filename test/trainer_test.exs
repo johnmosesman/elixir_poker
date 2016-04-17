@@ -14,4 +14,8 @@ defmodule TrainerTest do
     assert Trainer.should_three_bet?(['AC', 'KS'])
     refute Trainer.should_three_bet?(['KH', '2S'])
   end
+
+  test "number_of_outs" do
+
+  end
 end
